@@ -1,0 +1,45 @@
+     <table>
+                        <th><i class="fas fa-briefcase"></i>EXPERIENCE</th>
+                        <tr>
+                            <td>2019-2020</td>
+                            <td><strong>Junior Web Developer</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Ile-de-France</td>
+                            <td><em>Yoship</em></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</td>
+                        </tr>
+                        <tr>
+                            <td>2018-2012</td>
+                            <td><strong>Employment training consultant</strong></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <em>Mission Locale</em><br/>
+                                <em>Emmaüs Solidarité</em><br/>
+                                <em>MIIJ Epinay/Seine</em><br/>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                            </td>
+                        <tr>
+                            <td>2002-2012</td>
+                            <td><strong>Navy telecommunications technician</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Mediterranean</td>
+                            <td><em>Naval NCO</em></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                Transmission centre, Fort de Six-Fours (83)<br/>
+                                Charles de Gaulle Aircraft carrier<br/>
+                                Le Guepratte stealth frigate<br/>
+                                Missile launch centre (DGA)<br/>
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            </td>
+                        </tr>
+                    </table>
