@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga|Spartan&display=swap');
+
+* {
+    list-style: none; /* delete bullet point */
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-family: 'Roboto', arial;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none; /* delete native link style  */
+    color: inherit; /*  change the default color */
+}
+
+.about > p {
+    text-align: center;
+    padding: 3em;
+    text-align: justify;
+}
+
+/* colored line */
+.career h2 {
+    border-bottom: 2pt solid #FFC107;
+    width: 90%; 
+}
+
+.contact h2, .about h2, .hobbies h2 {
+    padding: .3em;
+    background-color: #212121;
+    color: #FFC107;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+h1 > span {
+    color: #FFC107;
+    display : inline-block;
+}
+
+.hobbies-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.line {
+    background-color: #FFC107;
+    height: 1.5pt;
+    width: 3em;
+}
+
+.picture {
+    display: flex;
+    margin: auto;
+}
+
+.picture img {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 20vw;
+    height: 20vw;
+}
+
+.ref {
+    display: none;
+}
+
+/* [ref] not used at the moment */
+/* .ref-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+} */
+
+/* allows the text to be placed vertically */
+.title {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title span, h1, h2 {
+    font-family: 'Spartan', arial;
+}
+
+/* SMALL DEVICE */
+
+@media screen and (max-width: 799px) {
+    /* wireframe of the page */
+    #page {
+        display: grid;
+        grid-gap: .5em;
+        /* repeat(X, X) >> DO NOT FORGOT THE COMMA INTO THE BRACKETS */
+        grid-template: 1fr 1fr auto 1fr / repeat(2, 50%); /* grid-template: rows / columns */
+    }
+    .A {
+        grid-area: A;
+    }
+    .B {
+        grid-area: B;
+    }
+    .about {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-color: #FFC107;
+    }
+    .C {
+        grid-area: D;
+    }
+    .career {
+        grid-column : 1/3;
+        grid-row: 3/4;
+        margin: 2em;
+    }
+    .career p {
+        padding-bottom: 1em;
+    }
+    .contact-small {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas:
+        "A B"
+        "C D";
+        padding: 2em;
+    }
+    .contact {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: #FFC107;
+    }
+    .hobbies {
+        display: none; 
+    }
+    .picture {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .picture img {
+        border: #FFC107 2pt solid;
+        height: 30vw;
+        width: 30vw;
+    }
+    .timeline >.two {
+        padding-top: 2em;
+    } 
+    .title {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    } 
+}
+
+/* DESKTOP DEVICE  */
+
+@media screen and (min-width: 800px) {
+    /* wireframe of the page */
+    #page {
+        display: grid;
+        /* repeat(X, X) >> DO NOT FORGOT THE COMMA INTO THE BRACKETS !*/
+        grid-template: repeat(3, calc(100vw/3)) auto calc(100vw/6) /repeat(3, calc(100vw/3)); /* grid-template: rows / columns */
+        box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    }
+    .about {
+        grid-column: 1/2;
+        grid-row: 3/5;
+        background-color: #FFC107;
+    }
+    .career {
+        grid-column : 2/4;
+        grid-row: 2/6;
+        padding: .5em 1em 0 3em;
+    }
+    .contact {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: #FFC107;
+    }
+    .contact ul {
+        padding: .5em 0.5em 0 3em;
+    }
+    .contact li {
+        padding: .5em;
+    }
+    .five {
+        grid-area: five;
+    }
+    .four {
+        grid-area: four;
+    }
+    .hobbies {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: #FFC107;
+    }
+    .hobbies ul {
+        padding: .5em 0 0 0;
+    }
+    .one {
+        grid-area: one;
+    }
+    .picture {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: #FFC107;
+        height: calc(100vw/3);
+        width: calc(100vW/3)
+    }
+    .picture img {
+        height: 20vw;
+        width: 20vw;
+    }
+    .seven {
+        grid-area: seven;
+    }
+    .six {
+        grid-area: six;
+    }
+    .timeline {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "one one"
+        "two three"
+        "four five"
+        "six seven";
+        padding-bottom: 1.5em;
+    }
+    .title {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        padding-left: 3em;
+    } 
+    .three {
+        grid-area: three;
+    }
+    .two {
+        grid-area: two;
+    }   
+    .ref-wrapper {
+        display: none;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
